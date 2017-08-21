@@ -1,0 +1,12 @@
+C:\Users\yoshiki\Documents\Visual Studio 2017\Projects\EcalcApp\EcalcApp\bin\Debug\EcalcApp.exe.config
+C:\Users\yoshiki\Documents\Visual Studio 2017\Projects\EcalcApp\EcalcApp\bin\Debug\EcalcApp.exe
+C:\Users\yoshiki\Documents\Visual Studio 2017\Projects\EcalcApp\EcalcApp\bin\Debug\EcalcApp.pdb
+C:\Users\yoshiki\Documents\Visual Studio 2017\Projects\EcalcApp\EcalcApp\obj\Debug\EcalcApp.EcalcMain.resources
+C:\Users\yoshiki\Documents\Visual Studio 2017\Projects\EcalcApp\EcalcApp\obj\Debug\EcalcApp.Properties.Resources.resources
+C:\Users\yoshiki\Documents\Visual Studio 2017\Projects\EcalcApp\EcalcApp\obj\Debug\EcalcApp.csproj.GenerateResource.Cache
+C:\Users\yoshiki\Documents\Visual Studio 2017\Projects\EcalcApp\EcalcApp\obj\Debug\EcalcApp.csproj.CoreCompileInputs.cache
+C:\Users\yoshiki\Documents\Visual Studio 2017\Projects\EcalcApp\EcalcApp\obj\Debug\EcalcApp.exe
+C:\Users\yoshiki\Documents\Visual Studio 2017\Projects\EcalcApp\EcalcApp\obj\Debug\EcalcApp.pdb
+C:\Users\yoshiki\Documents\Visual Studio 2017\Projects\EcalcApp\EcalcApp\obj\Debug\easyEcalc.EasyEcalc.resources
+C:\Users\yoshiki\Documents\Visual Studio 2017\Projects\EcalcApp\EcalcApp\obj\Debug\EcalcApp.csprojResolveAssemblyReference.cache
+C:\Users\yoshiki\Documents\Visual Studio 2017\Projects\EcalcApp\EcalcApp\obj\Debug\EcalcApp.NumPad.resources
