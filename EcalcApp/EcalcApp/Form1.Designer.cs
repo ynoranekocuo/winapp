@@ -28,18 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EcalcMain));
             this.eVtobutton = new System.Windows.Forms.Button();
             this.ftobutton = new System.Windows.Forms.Button();
             this.lambdatobutton = new System.Windows.Forms.Button();
             this.Ttobutton = new System.Windows.Forms.Button();
             this.Jtobutton = new System.Windows.Forms.Button();
             this.VirualKeyboardcheckBox = new System.Windows.Forms.CheckBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.easyEcalc1 = new easyEcalc.EasyEcalc();
             this.numPad1 = new EcalcApp.NumPad();
-            this.menuStrip1.SuspendLayout();
+            this.easyEcalc1 = new easyEcalc.EasyEcalc();
             this.SuspendLayout();
             // 
             // eVtobutton
@@ -101,7 +98,7 @@
             // 
             this.VirualKeyboardcheckBox.AutoSize = true;
             this.VirualKeyboardcheckBox.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.VirualKeyboardcheckBox.Location = new System.Drawing.Point(139, 371);
+            this.VirualKeyboardcheckBox.Location = new System.Drawing.Point(196, 362);
             this.VirualKeyboardcheckBox.Name = "VirualKeyboardcheckBox";
             this.VirualKeyboardcheckBox.Size = new System.Drawing.Size(199, 28);
             this.VirualKeyboardcheckBox.TabIndex = 6;
@@ -109,32 +106,12 @@
             this.VirualKeyboardcheckBox.UseVisualStyleBackColor = true;
             this.VirualKeyboardcheckBox.CheckedChanged += new System.EventHandler(this.VirualKeyboardcheckBox_CheckedChanged);
             // 
-            // menuStrip1
+            // numPad1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1246, 33);
-            this.menuStrip1.TabIndex = 8;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.closeToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 29);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // closeToolStripMenuItem
-            // 
-            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(139, 30);
-            this.closeToolStripMenuItem.Text = "Close";
-            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
+            this.numPad1.Location = new System.Drawing.Point(620, 12);
+            this.numPad1.Name = "numPad1";
+            this.numPad1.Size = new System.Drawing.Size(614, 508);
+            this.numPad1.TabIndex = 7;
             // 
             // easyEcalc1
             // 
@@ -143,18 +120,11 @@
             this.easyEcalc1.Size = new System.Drawing.Size(445, 280);
             this.easyEcalc1.TabIndex = 0;
             // 
-            // numPad1
-            // 
-            this.numPad1.Location = new System.Drawing.Point(605, 49);
-            this.numPad1.Name = "numPad1";
-            this.numPad1.Size = new System.Drawing.Size(614, 447);
-            this.numPad1.TabIndex = 9;
-            // 
             // EcalcMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1246, 501);
+            this.ClientSize = new System.Drawing.Size(1246, 524);
             this.Controls.Add(this.numPad1);
             this.Controls.Add(this.VirualKeyboardcheckBox);
             this.Controls.Add(this.Jtobutton);
@@ -163,13 +133,10 @@
             this.Controls.Add(this.ftobutton);
             this.Controls.Add(this.eVtobutton);
             this.Controls.Add(this.easyEcalc1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EcalcMain";
             this.Text = "EasyEcalc";
             this.Load += new System.EventHandler(this.EcalcMain_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,9 +151,6 @@
         private System.Windows.Forms.Button Ttobutton;
         private System.Windows.Forms.Button Jtobutton;
         private System.Windows.Forms.CheckBox VirualKeyboardcheckBox;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private NumPad numPad1;
     }
 }

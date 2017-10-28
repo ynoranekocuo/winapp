@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
+
 namespace easyEcalc
 {
     public partial class EasyEcalc : UserControl
@@ -22,7 +23,7 @@ namespace easyEcalc
 
             for(int i = 0; i < powindex.Length; ++i)
             {
-                if (num > pownum)
+                if (num >= pownum)
                 {
                     num /= pownum;
                     buffer = num.ToString("f2") +"  "+ powindex[i];                    
@@ -72,10 +73,20 @@ namespace easyEcalc
                 tempnum = Math.Abs(tempnum);
 
                 master.SetData(tempnum);
-                eVtextBox.Text = master.eV.ToString("f3");
+                eVtextBox.Text = expchange(master.eV);
                 HztextBox.Text = expchange(master.Hz);
                 mtextBox.Text = expchange(master.lambda);
-                TtextBox.Text = master.T.ToString("f3");
+                if (master.T >= 100000) {
+                    TtextBox.Text = master.T.ToString("e3");
+                }
+                else if (master.T >= 0.01)
+                {
+                    TtextBox.Text = master.T.ToString("f3");
+                }
+                else {
+                    TtextBox.Text = master.T.ToString("e3");
+                }
+
                 JtextBox.Text = master.J.ToString("e3");
             }
             else {
@@ -150,10 +161,10 @@ namespace easyEcalc
         protected override void calc()
         {
             //eV = eV;
-            Hz = eV * 2.41799 * Math.Pow(10, 14);
-            lambda = 2.99792458 * Math.Pow(10, 8) / Hz;
-            T = eV * 1.16045 * Math.Pow(10, 4);
-            J = eV * 3.82742 * Math.Pow(10, -20);
+            Hz = eV * Phys.eV/Phys.h;
+            lambda = Phys.c / Hz;
+            T = eV * Phys.eV/Phys.kB;
+            J = eV * Phys.eV;
         }
         public eVto()
         {
@@ -172,11 +183,12 @@ namespace easyEcalc
     {
         protected override void calc()
         {
-            eV = Hz * 4.13567 * Math.Pow(10, -15);
+
+            eV = Hz * Phys.h / Phys.eV;
             //  Hz = Hz;
-            lambda = 2.99792458 * Math.Pow(10, 8) / Hz;
-            T = Hz * 4.79924 * Math.Pow(10, -11);
-            J = Hz * 6.62607 * Math.Pow(10, -34);
+            lambda = Phys.c/ Hz;
+            T = Hz * Phys.h/Phys.kB;
+            J = Hz * Phys.h;
         }
         public Hzto()
         {
@@ -195,12 +207,12 @@ namespace easyEcalc
     {
         protected override void calc()
         {
-            Hz = 2.99792458 * Math.Pow(10, 8) / lambda;
-            eV = Hz * 4.13567 * Math.Pow(10, -15);
-            Hz = Hz;
-            //lambda = lambda;
-            T = Hz * 4.79924 * Math.Pow(10, -11);
-            J = Hz * 6.62607 * Math.Pow(10, -34);
+            Hz = Phys.c / lambda;
+            eV = Hz * Phys.h / Phys.eV;
+            //  Hz = Hz;
+            //lambda = Phys.c / Hz;
+            T = Hz * Phys.h / Phys.kB;
+            J = Hz * Phys.h;
         }
         public Lambdato()
         {
@@ -219,11 +231,11 @@ namespace easyEcalc
     {
         protected override void calc()
         {
-            eV = T * 8.61734 * Math.Pow(10, -5);
-            Hz = T * 2.08366 * Math.Pow(10, 10);
-            lambda = 2.99792458 * Math.Pow(10, 8) / Hz;
+            eV = T * Phys.kB / Phys.eV;
+            Hz = T * Phys.kB / Phys.h;
+            lambda = Phys.c / Hz;
             //T = T;
-            J = T * 1.38065 * Math.Pow(10, -23);
+            J = T * Phys.kB;
         }
         public Tto()
         {
@@ -242,10 +254,10 @@ namespace easyEcalc
     {
         protected override void calc()
         {
-            eV = J * 6.24151 * Math.Pow(10, 18);
-            Hz = J * 1.50919 * Math.Pow(10, 33);
-            lambda = 2.99792458 * Math.Pow(10, 8) / Hz;
-            T = J * 7.24296 * Math.Pow(10, 22);
+            eV = J / Phys.eV;
+            Hz = J / Phys.h;
+            lambda = Phys.c / Hz;
+            T = J / Phys.kB;
             //J = J;
         }
         public Jto()

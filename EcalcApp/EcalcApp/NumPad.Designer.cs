@@ -52,12 +52,13 @@
             this.kDisptextBox = new System.Windows.Forms.TextBox();
             this.Kdot_button = new System.Windows.Forms.Button();
             this.Kclr_button = new System.Windows.Forms.Button();
+            this.Kbac_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // k1_button
             // 
             this.k1_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.k1_button.Location = new System.Drawing.Point(10, 245);
+            this.k1_button.Location = new System.Drawing.Point(10, 300);
             this.k1_button.Name = "k1_button";
             this.k1_button.Size = new System.Drawing.Size(75, 84);
             this.k1_button.TabIndex = 0;
@@ -68,7 +69,7 @@
             // k2_button
             // 
             this.k2_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.k2_button.Location = new System.Drawing.Point(110, 245);
+            this.k2_button.Location = new System.Drawing.Point(110, 300);
             this.k2_button.Name = "k2_button";
             this.k2_button.Size = new System.Drawing.Size(75, 84);
             this.k2_button.TabIndex = 1;
@@ -79,7 +80,7 @@
             // k3_button
             // 
             this.k3_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.k3_button.Location = new System.Drawing.Point(210, 245);
+            this.k3_button.Location = new System.Drawing.Point(210, 300);
             this.k3_button.Name = "k3_button";
             this.k3_button.Size = new System.Drawing.Size(75, 84);
             this.k3_button.TabIndex = 2;
@@ -90,7 +91,7 @@
             // k6_button
             // 
             this.k6_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.k6_button.Location = new System.Drawing.Point(210, 145);
+            this.k6_button.Location = new System.Drawing.Point(210, 200);
             this.k6_button.Name = "k6_button";
             this.k6_button.Size = new System.Drawing.Size(75, 84);
             this.k6_button.TabIndex = 5;
@@ -101,7 +102,7 @@
             // k5_button
             // 
             this.k5_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.k5_button.Location = new System.Drawing.Point(110, 145);
+            this.k5_button.Location = new System.Drawing.Point(110, 200);
             this.k5_button.Name = "k5_button";
             this.k5_button.Size = new System.Drawing.Size(75, 84);
             this.k5_button.TabIndex = 4;
@@ -112,7 +113,7 @@
             // k4_button
             // 
             this.k4_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.k4_button.Location = new System.Drawing.Point(10, 145);
+            this.k4_button.Location = new System.Drawing.Point(10, 200);
             this.k4_button.Name = "k4_button";
             this.k4_button.Size = new System.Drawing.Size(75, 84);
             this.k4_button.TabIndex = 3;
@@ -123,7 +124,7 @@
             // k9_button
             // 
             this.k9_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.k9_button.Location = new System.Drawing.Point(210, 45);
+            this.k9_button.Location = new System.Drawing.Point(210, 100);
             this.k9_button.Name = "k9_button";
             this.k9_button.Size = new System.Drawing.Size(75, 84);
             this.k9_button.TabIndex = 8;
@@ -134,7 +135,7 @@
             // k8_button
             // 
             this.k8_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.k8_button.Location = new System.Drawing.Point(110, 45);
+            this.k8_button.Location = new System.Drawing.Point(110, 100);
             this.k8_button.Name = "k8_button";
             this.k8_button.Size = new System.Drawing.Size(75, 84);
             this.k8_button.TabIndex = 7;
@@ -145,7 +146,7 @@
             // k7_button
             // 
             this.k7_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.k7_button.Location = new System.Drawing.Point(10, 45);
+            this.k7_button.Location = new System.Drawing.Point(10, 100);
             this.k7_button.Name = "k7_button";
             this.k7_button.Size = new System.Drawing.Size(75, 84);
             this.k7_button.TabIndex = 6;
@@ -156,7 +157,7 @@
             // kexp_button
             // 
             this.kexp_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.kexp_button.Location = new System.Drawing.Point(310, 145);
+            this.kexp_button.Location = new System.Drawing.Point(310, 100);
             this.kexp_button.Name = "kexp_button";
             this.kexp_button.Size = new System.Drawing.Size(75, 84);
             this.kexp_button.TabIndex = 11;
@@ -167,7 +168,7 @@
             // k0_button
             // 
             this.k0_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.k0_button.Location = new System.Drawing.Point(110, 345);
+            this.k0_button.Location = new System.Drawing.Point(110, 400);
             this.k0_button.Name = "k0_button";
             this.k0_button.Size = new System.Drawing.Size(75, 84);
             this.k0_button.TabIndex = 10;
@@ -178,7 +179,7 @@
             // km_button
             // 
             this.km_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.km_button.Location = new System.Drawing.Point(10, 345);
+            this.km_button.Location = new System.Drawing.Point(10, 400);
             this.km_button.Name = "km_button";
             this.km_button.Size = new System.Drawing.Size(75, 84);
             this.km_button.TabIndex = 9;
@@ -189,7 +190,7 @@
             // ksk_button
             // 
             this.ksk_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.ksk_button.Location = new System.Drawing.Point(410, 345);
+            this.ksk_button.Location = new System.Drawing.Point(410, 400);
             this.ksk_button.Name = "ksk_button";
             this.ksk_button.Size = new System.Drawing.Size(75, 84);
             this.ksk_button.TabIndex = 15;
@@ -200,7 +201,7 @@
             // klT_button
             // 
             this.klT_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.klT_button.Location = new System.Drawing.Point(410, 45);
+            this.klT_button.Location = new System.Drawing.Point(410, 100);
             this.klT_button.Name = "klT_button";
             this.klT_button.Size = new System.Drawing.Size(75, 84);
             this.klT_button.TabIndex = 14;
@@ -211,7 +212,7 @@
             // klG_button
             // 
             this.klG_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.klG_button.Location = new System.Drawing.Point(410, 145);
+            this.klG_button.Location = new System.Drawing.Point(410, 200);
             this.klG_button.Name = "klG_button";
             this.klG_button.Size = new System.Drawing.Size(75, 84);
             this.klG_button.TabIndex = 13;
@@ -222,7 +223,7 @@
             // klM_button
             // 
             this.klM_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.klM_button.Location = new System.Drawing.Point(410, 245);
+            this.klM_button.Location = new System.Drawing.Point(410, 300);
             this.klM_button.Name = "klM_button";
             this.klM_button.Size = new System.Drawing.Size(75, 84);
             this.klM_button.TabIndex = 12;
@@ -233,7 +234,7 @@
             // ksm_button
             // 
             this.ksm_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.ksm_button.Location = new System.Drawing.Point(510, 345);
+            this.ksm_button.Location = new System.Drawing.Point(510, 400);
             this.ksm_button.Name = "ksm_button";
             this.ksm_button.Size = new System.Drawing.Size(75, 84);
             this.ksm_button.TabIndex = 19;
@@ -244,7 +245,7 @@
             // ksp_button
             // 
             this.ksp_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.ksp_button.Location = new System.Drawing.Point(510, 45);
+            this.ksp_button.Location = new System.Drawing.Point(510, 100);
             this.ksp_button.Name = "ksp_button";
             this.ksp_button.Size = new System.Drawing.Size(75, 84);
             this.ksp_button.TabIndex = 18;
@@ -255,7 +256,7 @@
             // ksn_button
             // 
             this.ksn_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.ksn_button.Location = new System.Drawing.Point(510, 145);
+            this.ksn_button.Location = new System.Drawing.Point(510, 200);
             this.ksn_button.Name = "ksn_button";
             this.ksn_button.Size = new System.Drawing.Size(75, 84);
             this.ksn_button.TabIndex = 17;
@@ -266,7 +267,7 @@
             // ksu_button
             // 
             this.ksu_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.ksu_button.Location = new System.Drawing.Point(510, 245);
+            this.ksu_button.Location = new System.Drawing.Point(510, 300);
             this.ksu_button.Name = "ksu_button";
             this.ksu_button.Size = new System.Drawing.Size(75, 84);
             this.ksu_button.TabIndex = 16;
@@ -277,7 +278,7 @@
             // kEnt_button
             // 
             this.kEnt_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.kEnt_button.Location = new System.Drawing.Point(310, 345);
+            this.kEnt_button.Location = new System.Drawing.Point(310, 400);
             this.kEnt_button.Name = "kEnt_button";
             this.kEnt_button.Size = new System.Drawing.Size(75, 84);
             this.kEnt_button.TabIndex = 20;
@@ -288,7 +289,7 @@
             // kDisptextBox
             // 
             this.kDisptextBox.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.kDisptextBox.Location = new System.Drawing.Point(10, 5);
+            this.kDisptextBox.Location = new System.Drawing.Point(10, 30);
             this.kDisptextBox.Name = "kDisptextBox";
             this.kDisptextBox.Size = new System.Drawing.Size(358, 31);
             this.kDisptextBox.TabIndex = 21;
@@ -296,7 +297,7 @@
             // Kdot_button
             // 
             this.Kdot_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.Kdot_button.Location = new System.Drawing.Point(210, 345);
+            this.Kdot_button.Location = new System.Drawing.Point(210, 400);
             this.Kdot_button.Name = "Kdot_button";
             this.Kdot_button.Size = new System.Drawing.Size(75, 84);
             this.Kdot_button.TabIndex = 22;
@@ -307,7 +308,7 @@
             // Kclr_button
             // 
             this.Kclr_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.Kclr_button.Location = new System.Drawing.Point(310, 245);
+            this.Kclr_button.Location = new System.Drawing.Point(310, 300);
             this.Kclr_button.Name = "Kclr_button";
             this.Kclr_button.Size = new System.Drawing.Size(75, 84);
             this.Kclr_button.TabIndex = 23;
@@ -315,10 +316,22 @@
             this.Kclr_button.UseVisualStyleBackColor = true;
             this.Kclr_button.Click += new System.EventHandler(this.Kclr_button_Click);
             // 
+            // Kbac_button
+            // 
+            this.Kbac_button.Font = new System.Drawing.Font("MS UI Gothic", 12F);
+            this.Kbac_button.Location = new System.Drawing.Point(310, 200);
+            this.Kbac_button.Name = "Kbac_button";
+            this.Kbac_button.Size = new System.Drawing.Size(75, 84);
+            this.Kbac_button.TabIndex = 24;
+            this.Kbac_button.Text = "BS";
+            this.Kbac_button.UseVisualStyleBackColor = true;
+            this.Kbac_button.Click += new System.EventHandler(this.Kbac_button_Click);
+            // 
             // NumPad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Kbac_button);
             this.Controls.Add(this.Kclr_button);
             this.Controls.Add(this.Kdot_button);
             this.Controls.Add(this.kDisptextBox);
@@ -344,7 +357,7 @@
             this.Controls.Add(this.k2_button);
             this.Controls.Add(this.k1_button);
             this.Name = "NumPad";
-            this.Size = new System.Drawing.Size(614, 447);
+            this.Size = new System.Drawing.Size(614, 508);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -376,5 +389,6 @@
         public System.Windows.Forms.TextBox kDisptextBox;
         private System.Windows.Forms.Button Kdot_button;
         private System.Windows.Forms.Button Kclr_button;
+        private System.Windows.Forms.Button Kbac_button;
     }
 }

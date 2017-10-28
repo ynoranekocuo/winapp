@@ -140,11 +140,6 @@ namespace EcalcApp
 
         }
 
-        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void VirualKeyboardcheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (VirualKeyboardcheckBox.Checked)

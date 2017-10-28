@@ -219,5 +219,14 @@ namespace EcalcApp
         {
             kDisptextBox.Clear();
         }
+
+        private void Kbac_button_Click(object sender, EventArgs e)
+        {
+            if (kDisptextBox.Focused == false)
+            {
+                kDisptextBox.Focus();
+            }
+            SendKeys.Send("{BS}");
+        }
     }
 }
